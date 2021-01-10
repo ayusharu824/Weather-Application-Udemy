@@ -4,7 +4,8 @@ const hbs = require("hbs");
 const app = express();
 const geocode=require('./Utils/geocode')
 const forecast=require('./Utils/forecast')
-
+       
+///Added cmnts to check git status
 //Define paths for Express Config
 const htmlPath = path.join(__dirname, "../public");
 const viewsPath = path.join(__dirname, "../template/views");
