@@ -7,7 +7,8 @@ const app = express();
 const port = process.env.PORT||3000
 
 const geocode=require('./Utils/geocode')
-const forecast=require('./Utils/forecast')
+const forecast=require('./Utils/forecast');
+const { json } = require("express");
        
 ///Added cmnts to check git status
 //Define paths for Express Config
