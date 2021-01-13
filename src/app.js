@@ -2,6 +2,10 @@ const express = require("express");
 const path = require("path");
 const hbs = require("hbs");
 const app = express();
+
+//defining the PORT
+const port = process.env.PORT||3000
+
 const geocode=require('./Utils/geocode')
 const forecast=require('./Utils/forecast')
        
@@ -95,7 +99,7 @@ app.get("*", (req, res) => {
     name: "Ayush Srivastava",
   });
 });
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("server is running on Port 3000");
 });
 
